@@ -17,3 +17,5 @@ In Ubuntu the missing Module.symvers (symbol version dump) file is in the packag
 #####File "wifiphisher.py", line 20, in <module> from scapy.all import *
 sudo apt-get install python-scapy
 
+#####The following packages have unmet dependencies
+Change the source list to the met version.
