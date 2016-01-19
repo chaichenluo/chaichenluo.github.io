@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</script>
 
 晶体管分为两大系列：双极型晶体管和场效应晶体管。
 区别：
