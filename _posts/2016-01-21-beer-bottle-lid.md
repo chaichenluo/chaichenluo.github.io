@@ -17,6 +17,7 @@ tags: []
 问：100块钱可以喝多少瓶
 
 递归算法实现：
+
 	#define N	5
 	int total = 0;
 	int round = 0;
