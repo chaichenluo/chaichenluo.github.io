@@ -11,10 +11,12 @@ tags: []
 
 		Arduino <==> OLED
 		13      <==> D0(CLK)
-		11		<==> D1(MOSI)
-		10		<==> CS
-		9		<==> DC
-		REST	<==> RES
+		11      <==> D1(MOSI)
+		10      <==> CS
+		9       <==> DC
+		REST    <==> RST
+		VCC     <==> VCC
+        VDD     <==> VDD
 
 * Unzip the U8glib.zip to the libraries directory
 
