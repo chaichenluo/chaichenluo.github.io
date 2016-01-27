@@ -11,14 +11,31 @@ tags: []
 
 > vi xtping.sh 
 
-
 	#!/bin/sh
+	i=0
+	xoff="+0"
+	yoff=0
+	
 	while read LINE
 	do
-		echo $LINE
-		xterm -geometry 100x10 -e /sysdisk/testping/PING.sh $LINE &
-		sleep 1
+		echo "line $i:$LINE"
+		echo "yoff=$yoff"
+		a=1
+		b=180
+		c=4
+		d=`expr $i % $c`
+		yoff=`expr $b \* $d`
+	
+		echo "xterm -geometry 50x5${xoff}+${yoff} -e /sysdisk/testping/PING.sh $LINE &"
+		xterm -geometry 100x11${xoff}+${yoff} -e /sysdisk/testping/PING.sh $LINE &
+	
+		i=`expr $i + $a`
+		if [ $i -eq 4 ]; then
+			xoff="-0"
+		fi
+	
 	done < /sysdisk/testping/ip_list.txt
+
 
 ###Get ping result with color
 
@@ -68,5 +85,3 @@ tags: []
 			ECHONRT "#${NG_NO} " COLOR_RED
 		fi
 	done
-
-###
