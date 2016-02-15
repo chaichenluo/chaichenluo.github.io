@@ -7,13 +7,13 @@ tags: []
 ---
 {% include JB/setup %}
 
-###Equipment
+### Equipment
 * Arduino
 * 0.96 OLED SSD1306
 * Dupont Lines
 * Micro USB line (Android phone charging line)
 
-###Porcess
+### Porcess
 
 * Connect the arduino and 0.96 128x64 OLED
 
@@ -36,7 +36,7 @@ tags: []
  
 * Compile and upload
 
-###Code
+### Code
 
 		#include "U8glib.h"
 		U8GLIB_SSD1306_128X64 u8g(13, 11, 10, 9);	// SW SPI Com: SCK = 13, MOSI = 11, CS = 10, A0 = 9
