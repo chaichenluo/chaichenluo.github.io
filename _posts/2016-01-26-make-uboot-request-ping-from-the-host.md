@@ -8,9 +8,9 @@ tags: []
 {% include JB/setup %}
 
 
-###Make uboot request ping from the host
+### Make uboot request ping from the host
 
-####Add recvping command
+#### Add recvping command
 ./common/cmd_net.c
 
 		#if defined(CONFIG_CMD_PING)
@@ -55,7 +55,7 @@ tags: []
 		);
 		#endif
 
-####Add RECVPING to the protocol list 
+#### Add RECVPING to the protocol list 
 ./include/net.h
 		
 		enum proto_t {
@@ -64,7 +64,7 @@ tags: []
 		};
 
 
-####Add RECVPING to main network processing loop
+#### Add RECVPING to main network processing loop
 ./net/ping.c
 
 		void recvping_start(void) {  		    printf("Using %s device\n", eth_get_name());  
@@ -77,7 +77,7 @@ tags: []
 			recvping_start();  
 			break;
 
-####Bingo!
+#### Bingo!
 
 * uboot
 
