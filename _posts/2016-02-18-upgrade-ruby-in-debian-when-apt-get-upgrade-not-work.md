@@ -77,3 +77,20 @@ tags: []
 > ruby -v
 
 	ruby 1.9.3p551 (2014-11-13 revision 48407) [i686-linux]
+
+
+### 5. Appendix
+
+*Notice:*
+
+* Change a new source 
+
+> gem source -r http://rubygems.org/;gem source -a http://ruby.aliyun.com
+
+* Install Bundle and Rails
+
+> $ gem install bundler rails
+
+* Some IDE could not find ruby, the resolution is
+
+> cp -rf ~/.rvm/bin/ruby /usr/bin
