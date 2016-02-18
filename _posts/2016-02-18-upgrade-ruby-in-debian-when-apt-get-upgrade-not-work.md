@@ -93,4 +93,4 @@ tags: []
 
 * Some IDE could not find ruby, the resolution is
 
-> cp -rf ~/.rvm/bin/ruby /usr/bin
+> sudo cp -rf ~/.rvm/bin/ruby /usr/bin
