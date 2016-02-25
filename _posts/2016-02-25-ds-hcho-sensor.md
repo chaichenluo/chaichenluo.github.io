@@ -10,6 +10,8 @@ tags: []
 
 ### Physical Pin Description
 
+DS-HCHO pin 
+
 	Pin    <==> Description
 	1      <==> VCC (3.3V)
 	2      <==> GND
@@ -18,6 +20,12 @@ tags: []
 	5      <==> NULL
 	6      <==> TX
 	7      <==> RX
+
+Connect DS-HCHO to USB2RS232+MA3321C
+
+	DS-HCHO  <==> USB2RS232
+	6(TX)    <==>  3 (RX)
+	7(RX)    <==>  4 (TX)
 
 
 ### Protocol
