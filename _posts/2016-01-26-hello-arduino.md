@@ -23,8 +23,8 @@ tags: []
 		10      <==> CS
 		9       <==> DC
 		REST    <==> RST
-		VCC     <==> VCC
-        VDD     <==> VDD
+		VCC     <==> VCC(2.8V~5.5V)
+        GND     <==> GND
 
 * Unzip the U8glib.zip to the libraries directory
 
