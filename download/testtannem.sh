@@ -56,8 +56,8 @@ do
 	traceroute vive.me
 
 	ECHO "Step 4:" COLOR_BLUE
-	ECHO "curl -o /dev/null --connect-timeout 10 -m 10 -s -w '%{time_connect}:%{time_starttransfer}:%{time_total}:%{time_namelookup}:%{speed_download}\n' 'http://vive.me'" COLOR_BLUE
-	curl -o /dev/null --connect-timeout 10 -m 10 -s -w '\n%{time_connect}:%{time_starttransfer}:%{time_total}:%{time_namelookup}:%{speed_download}\n' 'http://vive.me'	
+	ECHO "curl -v --trace-ascii --connect-timeout 10 -m 10 -s -w '%{time_connect}:%{time_starttransfer}:%{time_total}:%{time_namelookup}:%{speed_download}\n' 'http://vive.me'" COLOR_BLUE
+	curl -v --trace-ascii --connect-timeout 10 -m 10 -s -w '\n%{time_connect}:%{time_starttransfer}:%{time_total}:%{time_namelookup}:%{speed_download}\n' 'http://vive.me'	
 
 	ECHO "curl -o /dev/null --connect-timeout 10 -m 10 -s -w '%{time_connect}:%{time_starttransfer}:%{time_total}:%{time_namelookup}:%{speed_download}\n' 'https://vive.me'" COLOR_BLUE
 	curl -o /dev/null --connect-timeout 10 -m 10 -s -w '\n%{time_connect}:%{time_starttransfer}:%{time_total}:%{time_namelookup}:%{speed_download}\n' 'https://vive.me'	
